@@ -1,0 +1,161 @@
+/* Detailed Custom SASS file. This is where the dirty shite lives. */
+
+
+
+// =============================================================================
+// Index Page Styles
+// =============================================================================
+
+.logo {
+	img {
+		padding-left: $padding-base;
+	}
+}
+
+.client {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+
+.clientContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -0.25em;
+	}
+}
+
+.clientInformation {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: auto;
+	margin-left: auto;
+	width: 99%;
+
+	p {
+		color: $client-p-color;
+		font-size: $client-p-size;
+	}
+}
+
+.clientButton {
+	a {
+		display: inline-block;
+		padding: $padding-small $padding-base;
+		border: 2px solid $button-color;
+		color: $button-color;
+		text-decoration: none;
+
+		&:hover {
+			@include transition (all 0.3s ease-in-out);
+			background-color: $white;
+			text-decoration: none;
+		}
+
+	}
+}
+
+.platformIcons {
+	i {
+		padding-right: $padding-small;
+		color: $button-color;
+		font-size: $icon-size;
+	}
+}
+
+
+// =============================================================================
+// Item Page Styles
+// =============================================================================
+
+.portfolioItemContainer {
+	animation: slideInRight 0.5s ease-in-out;
+	background-color: $white;
+
+	h1, h2 {
+		display: inline-block;
+		border-bottom: 2px solid $orange;
+	}
+}
+
+.interiorHeaderContent {
+	background-color: $white;
+	img {
+		margin: 0 auto;
+	}
+}
+
+
+
+.itemOverview {
+	max-width: 1100px;
+
+	p {
+		padding-top: $padding-base;
+		padding-bottom: $padding-base;
+		color: $item-p-color;
+		font-size: $client-p-size;
+		line-height: 28px;
+	}
+}
+.linkButton {
+	a {
+		display: inline-block;
+		padding: $padding-small $padding-base;
+		border: 2px solid $button-color;
+		color: $button-color;
+		text-decoration: none;
+
+		&:hover {
+			@include transition (all 0.3s ease-in-out);
+			background-color: $orange;
+			text-decoration: none;
+		}
+
+	}
+}
+
+
+// =============================================================================
+// Page Animations
+// =============================================================================
+
+
+.content {
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+.portfolioItemContainer {
+	animation: slideInRight 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInRight {
+	0% {
+		transform: translate3d(100%, 0, 0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}

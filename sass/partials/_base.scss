@@ -1,0 +1,106 @@
+// =============================================================================
+// Font Styling
+// =============================================================================
+
+@font-face {
+  font-family: 'Flama';
+  src: url('../fonts/flamaultracondensed-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/flamaultracondensed-medium-webfont.woff') format('woff'),
+	   url('../fonts/flamaultracondensed-medium-webfont.ttf')  format('truetype'),
+	   url('../fonts/flamaultracondensed-medium-webfont.svg#BebasNeue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+	background-color: $site-bg;
+}
+
+a {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Flama";
+}
+
+h1 {
+	font-size: 60px;
+	letter-spacing: 2px;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+.font-white {
+	color: $white;
+}
+
+.font-dark-blue {
+	color: $dark-blue-text;
+}
+
+.font-yellow {
+	color: $yellow;
+}
+
+.blue-border {
+	border: 2px solid $light-blue;
+}
+
+// =============================================================================
+// Header Style
+// =============================================================================
+header {
+	padding-top: $padding-small;
+	padding-bottom: $padding-small;
+}
+
+
+
+// =============================================================================
+// Navbar Styling
+// =============================================================================
+nav ul {
+	float: right;
+
+	li {
+		display: inline-block;
+		padding: $padding-small $padding-base 0 $padding-base;
+		font-size: $nav-font-size;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+
+		a {
+			@include transition (all 0.3s ease-in-out);
+			display: block;
+			color: $nav-link-color;
+			text-decoration: none;
+
+			&:link, &:visited, &:hover, &:active {
+				@include transition (all 0.3s ease-in-out);
+				text-decoration: none;
+			}
+
+			&:hover {
+				color: $nav-link-hover;
+			}
+		}
+	}
+}
+
