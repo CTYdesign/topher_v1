@@ -17,3 +17,33 @@ console.log('Get Schwifty!');
             }
         }).data('smoothState');
 })(jQuery);
+
+
+/* =================
+ * Mobile Navigation
+ ===================*/
+
+function toggleNav() {
+    if ($('.navigation').hasClass('show-nav')) {
+        $('.navigation').removeClass('show-nav').addClass('hide-nav');
+    } else 
+            if ($('.navigation').hasClass('hide-nav')) {
+                $('.navigation').removeClass('hide-nav').addClass('show-nav');
+            }
+            else {
+                $('.navigation').addClass('show-nav');
+    }
+}
+
+$(function() {
+    $('.toggle-nav').click(function() {
+        toggleNav();
+    });
+});
+
+$(function() {
+$('.nav-trigger').click(function(e) {
+  e.preventDefault();
+  $('.trigger-top, .trigger-middle, .trigger-bottom').toggleClass('open');
+});
+});

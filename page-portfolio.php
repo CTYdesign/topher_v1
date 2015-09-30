@@ -2,7 +2,7 @@
 
 	/*
 
-	Template Name: Portfolio
+	Template Name: Portfolio Full-Width
 	
 	*/
 
@@ -11,7 +11,7 @@
 <?php get_header(); ?>
 
 
-<div class="container-fluid content" id="portfolioContent">
+<div class="container-fluid" id="portfolioContent">
 
 	<?php
 	$args = array (
@@ -28,7 +28,7 @@
 		?>
 
 	<div class="row client fadeInUp" style="background-color:<?php the_field('background_color', $projects->ID); ?>">
-			<div class="col-sm-4 col-sm-offset-1">
+			<div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12">
 				<div class="clientContainer">
 					<div class="clientInformation">
 						<h1><?php echo get_the_title($projects->ID); ?></h1>
@@ -65,7 +65,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-md-6 col-sm-6 col-xs-12">
 				<img src="<?php the_field('cover_image', $projects->ID); ?>" class="img-responsive" />
 			</div>
 		</div>

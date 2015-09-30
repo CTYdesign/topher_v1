@@ -8815,7 +8815,7 @@ button.close {
 
 /* line 22, ../sass/partials/_base.scss */
 body {
-  background-color: #222222;
+  background-color: #333333;
 }
 
 /* line 30, ../sass/partials/_base.scss */
@@ -8852,13 +8852,13 @@ h2 {
 }
 
 /* line 58, ../sass/partials/_base.scss */
-.font-yellow {
-  color: #fec032;
+.font-orange {
+  color: #f7941e;
 }
 
 /* line 62, ../sass/partials/_base.scss */
-.blue-border {
-  border: 2px solid #b1e1ea;
+.font-grey {
+  color: #727272;
 }
 
 /* line 69, ../sass/partials/_base.scss */
@@ -8867,46 +8867,187 @@ header {
   padding-bottom: 10px;
 }
 
-/* line 79, ../sass/partials/_base.scss */
-nav ul {
-  float: right;
+/* line 78, ../sass/partials/_base.scss */
+.content {
+  max-width: 1000px;
 }
-/* line 82, ../sass/partials/_base.scss */
-nav ul li {
-  display: inline-block;
-  padding: 10px 20px 0 20px;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+
+/* line 87, ../sass/partials/_base.scss */
+nav {
+  position: fixed;
+  background-color: #333333;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 999;
+  text-align: center;
 }
-/* line 89, ../sass/partials/_base.scss */
-nav ul li a {
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  display: block;
+/* line 99, ../sass/partials/_base.scss */
+nav a {
+  font-size: 26px;
+}
+/* line 103, ../sass/partials/_base.scss */
+nav i {
+  width: 100%;
+  padding: 20px;
   color: #FFFFFF;
-  text-decoration: none;
+  border-bottom: 1px solid #454545;
 }
-/* line 95, ../sass/partials/_base.scss */
-nav ul li a:link, nav ul li a:visited, nav ul li a:hover, nav ul li a:active {
+
+/* line 115, ../sass/partials/_base.scss */
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 119, ../sass/partials/_base.scss */
+footer h2 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+/* line 124, ../sass/partials/_base.scss */
+footer .footerInfo {
+  padding-left: 20px;
+}
+/* line 128, ../sass/partials/_base.scss */
+footer .socialMedia {
+  padding-right: 20px;
+  float: right;
+  text-align: right;
+}
+/* line 133, ../sass/partials/_base.scss */
+footer .socialMedia i {
+  padding-right: 10px;
+  color: #f7941e;
+  font-size: 32px;
+}
+/* line 138, ../sass/partials/_base.scss */
+footer .socialMedia i:hover {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
-/* line 100, ../sass/partials/_base.scss */
-nav ul li a:hover {
-  color: #f7941e;
+  color: #FFFFFF;
 }
 
 /* Detailed Custom SASS file. This is where the dirty shite lives. */
-/* line 10, ../sass/partials/_custom.scss */
-.logo img {
-  padding-left: 20px;
+/* line 9, ../sass/partials/_custom.scss */
+header {
+  padding-bottom: 20px;
+}
+/* line 11, ../sass/partials/_custom.scss */
+header .logo img {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+/* line 17, ../sass/partials/_custom.scss */
+header .logo p {
+  text-transform: lowercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
 }
 
-/* line 15, ../sass/partials/_custom.scss */
+/* line 28, ../sass/partials/_custom.scss */
+.portfolio-container {
+  padding-bottom: 40px;
+}
+
+/* line 33, ../sass/partials/_custom.scss */
+.line-break {
+  width: 40px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+/* line 39, ../sass/partials/_custom.scss */
+.client-cover {
+  padding: 5px;
+}
+/* line 42, ../sass/partials/_custom.scss */
+.client-cover a {
+  display: block;
+  cursor: pointer;
+}
+/* line 47, ../sass/partials/_custom.scss */
+.client-cover .client-information, .client-cover .client-information-left, .client-cover .client-information-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+/* line 55, ../sass/partials/_custom.scss */
+.client-cover .client-information h1, .client-cover .client-information-left h1, .client-cover .client-information-right h1 {
+  color: #212121;
+  font-size: 50px;
+}
+/* line 60, ../sass/partials/_custom.scss */
+.client-cover .client-information p, .client-cover .client-information-left p, .client-cover .client-information-right p {
+  padding-top: 5px;
+  color: #FFFFFF;
+}
+/* line 66, ../sass/partials/_custom.scss */
+.client-cover .client-information-left {
+  text-align: right;
+}
+/* line 70, ../sass/partials/_custom.scss */
+.client-cover .client-information-left .line-break {
+  margin-left: auto;
+  margin-right: 0;
+}
+/* line 76, ../sass/partials/_custom.scss */
+.client-cover .client-information-right {
+  text-align: left;
+}
+
+/* line 84, ../sass/partials/_custom.scss */
+.about-me {
+  margin-top: 50px;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+/* line 89, ../sass/partials/_custom.scss */
+.about-me a {
+  display: block;
+  width: 100%;
+  border: 2px solid #f7941e;
+  color: #f7941e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 100, ../sass/partials/_custom.scss */
+.about-me p {
+  padding-top: 10px;
+  color: #FFFFFF;
+}
+/* line 105, ../sass/partials/_custom.scss */
+.about-me h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #FFFFFF;
+}
+
+/* line 112, ../sass/partials/_custom.scss */
+.thanks {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+/* line 115, ../sass/partials/_custom.scss */
+.thanks img {
+  margin: 0 auto;
+}
+/* line 119, ../sass/partials/_custom.scss */
+.thanks p {
+  color: #FFFFFF;
+}
+
+/* line 125, ../sass/partials/_custom.scss */
 .client {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8914,13 +9055,13 @@ nav ul li a:hover {
   display: flex;
 }
 
-/* line 23, ../sass/partials/_custom.scss */
+/* line 133, ../sass/partials/_custom.scss */
 .clientContainer {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-/* line 28, ../sass/partials/_custom.scss */
+/* line 138, ../sass/partials/_custom.scss */
 .clientContainer:before {
   content: '';
   display: inline-block;
@@ -8929,7 +9070,7 @@ nav ul li a:hover {
   margin-right: -0.25em;
 }
 
-/* line 37, ../sass/partials/_custom.scss */
+/* line 147, ../sass/partials/_custom.scss */
 .clientInformation {
   display: inline-block;
   vertical-align: middle;
@@ -8937,13 +9078,13 @@ nav ul li a:hover {
   margin-left: auto;
   width: 99%;
 }
-/* line 44, ../sass/partials/_custom.scss */
+/* line 154, ../sass/partials/_custom.scss */
 .clientInformation p {
   color: #FFFFFF;
   font-size: 18px;
 }
 
-/* line 51, ../sass/partials/_custom.scss */
+/* line 161, ../sass/partials/_custom.scss */
 .clientButton a {
   display: inline-block;
   padding: 10px 20px;
@@ -8951,7 +9092,7 @@ nav ul li a:hover {
   color: #222222;
   text-decoration: none;
 }
-/* line 58, ../sass/partials/_custom.scss */
+/* line 168, ../sass/partials/_custom.scss */
 .clientButton a:hover {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -8960,38 +9101,61 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-/* line 68, ../sass/partials/_custom.scss */
+/* line 178, ../sass/partials/_custom.scss */
 .platformIcons i {
   padding-right: 10px;
   color: #222222;
   font-size: 26px;
 }
 
-/* line 80, ../sass/partials/_custom.scss */
+/* line 190, ../sass/partials/_custom.scss */
+.interior-logo {
+  width: 100%;
+  height: 100%;
+}
+/* line 194, ../sass/partials/_custom.scss */
+.interior-logo img {
+  position: absolute;
+  bottom: 130px;
+  left: -65px;
+  width: 200px;
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+}
+
+/* line 206, ../sass/partials/_custom.scss */
+.portfolio-shift {
+  margin-left: 70px;
+}
+
+/* line 216, ../sass/partials/_custom.scss */
 .portfolioItemContainer {
   animation: slideInRight 0.5s ease-in-out;
   background-color: #FFFFFF;
 }
-/* line 84, ../sass/partials/_custom.scss */
+/* line 220, ../sass/partials/_custom.scss */
 .portfolioItemContainer h1, .portfolioItemContainer h2 {
   display: inline-block;
   border-bottom: 2px solid #f7941e;
 }
 
-/* line 90, ../sass/partials/_custom.scss */
+/* line 226, ../sass/partials/_custom.scss */
 .interiorHeaderContent {
   background-color: #FFFFFF;
 }
-/* line 92, ../sass/partials/_custom.scss */
+/* line 228, ../sass/partials/_custom.scss */
 .interiorHeaderContent img {
   margin: 0 auto;
 }
 
-/* line 99, ../sass/partials/_custom.scss */
+/* line 235, ../sass/partials/_custom.scss */
 .itemOverview {
   max-width: 1100px;
 }
-/* line 102, ../sass/partials/_custom.scss */
+/* line 238, ../sass/partials/_custom.scss */
 .itemOverview p {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -9000,7 +9164,7 @@ nav ul li a:hover {
   line-height: 28px;
 }
 
-/* line 111, ../sass/partials/_custom.scss */
+/* line 247, ../sass/partials/_custom.scss */
 .linkButton a {
   display: inline-block;
   padding: 10px 20px;
@@ -9008,7 +9172,7 @@ nav ul li a:hover {
   color: #222222;
   text-decoration: none;
 }
-/* line 118, ../sass/partials/_custom.scss */
+/* line 254, ../sass/partials/_custom.scss */
 .linkButton a:hover {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -9017,12 +9181,22 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-/* line 133, ../sass/partials/_custom.scss */
+/* line 263, ../sass/partials/_custom.scss */
+.clientNavContainer {
+  padding: 30px 0;
+}
+/* line 266, ../sass/partials/_custom.scss */
+.clientNavContainer .clientNav {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+/* line 277, ../sass/partials/_custom.scss */
 .content {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* line 137, ../sass/partials/_custom.scss */
+/* line 281, ../sass/partials/_custom.scss */
 .portfolioItemContainer {
   animation: slideInRight 0.5s ease-in-out;
 }
@@ -9363,3 +9537,260 @@ nav ul li a:hover {
 .full-width {
   width: 100%;
 }
+
+/*
+
+CTYDesign - Responsive Styling
+Description: Media queries for tablet/mobile devices
+Author: Topher Young
+Version: 1.0
+
+*/
+/* =================
+ * Extra Large Devices, Monitors/TVs
+ ===================*/
+/* =================
+ * Large Devices, Wide Screens
+ ===================*/
+/* =================
+ * Medium Devices, Desktops
+ ===================*/
+/* =================
+ * Small Devices, Tablets
+ ===================*/
+@media only screen and (max-width: 767px) {
+  /* line 40, ../sass/partials/_responsive.scss */
+  header {
+    padding: 0;
+  }
+
+  /* line 44, ../sass/partials/_responsive.scss */
+  .client {
+    display: block;
+    text-align: center;
+  }
+  /* line 48, ../sass/partials/_responsive.scss */
+  .client .clientContainer {
+    position: relative;
+    margin-top: 40px;
+  }
+
+  /* line 59, ../sass/partials/_responsive.scss */
+  footer .footerInfo, footer .socialMedia {
+    text-align: center;
+    float: none;
+  }
+
+  /* line 66, ../sass/partials/_responsive.scss */
+  .logo {
+    z-index: 9;
+    background-color: #333333;
+    z-index: 99;
+    padding: 10px 0;
+  }
+  /* line 72, ../sass/partials/_responsive.scss */
+  .logo a {
+    display: block;
+    cursor: pointer;
+  }
+  /* line 77, ../sass/partials/_responsive.scss */
+  .logo img {
+    height: 35px;
+    width: auto;
+  }
+  /* line 82, ../sass/partials/_responsive.scss */
+  .logo .nav-trigger {
+    -webkit-transition: all, 0.3s, linear;
+    -o-transition: all, 0.3s, linear;
+    transition: all, 0.3s, linear;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    z-index: 99;
+  }
+
+  /* line 94, ../sass/partials/_responsive.scss */
+  nav ul {
+    float: none;
+    position: absolute;
+    text-align: center;
+    background-color: #333333;
+    z-index: 1;
+    width: 100%;
+  }
+
+  /* line 103, ../sass/partials/_responsive.scss */
+  .navigation {
+    z-index: 1;
+    padding: 0;
+    margin-top: -145px;
+    z-index: 98;
+  }
+
+  /* line 110, ../sass/partials/_responsive.scss */
+  .navigation.show-nav {
+    -ms-transform: translateY(145px);
+    -webkit-transform: translateY(145px);
+    transform: translateY(145px);
+    -webkit-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.43, 0.995);
+    -moz-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.43, 0.995);
+    -o-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.43, 0.995);
+    transition: all 0.8s cubic-bezier(0.735, 0.005, 0.43, 0.995);
+  }
+
+  /* line 120, ../sass/partials/_responsive.scss */
+  .navigation.hide-nav {
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.43, 0.995);
+    -moz-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.43, 0.995);
+    -o-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.43, 0.995);
+    transition: all 0.8s cubic-bezier(0.735, 0.005, 0.43, 0.995);
+  }
+
+  /* line 130, ../sass/partials/_responsive.scss */
+  nav ul li {
+    display: block;
+    padding: 15px 0px 15px 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  /* line 138, ../sass/partials/_responsive.scss */
+  nav ul li a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* line 148, ../sass/partials/_responsive.scss */
+  nav ul li a:hover {
+    color: #ED1C24;
+    text-decoration: none;
+    webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* line 157, ../sass/partials/_responsive.scss */
+  .resumeButton {
+    height: 40px;
+    background-color: #f7941e;
+    border-radius: 0;
+    padding: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* line 168, ../sass/partials/_responsive.scss */
+  .resumeButton a {
+    display: block;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 9px;
+    color: #fff;
+    text-decoration: none;
+    webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* line 181, ../sass/partials/_responsive.scss */
+  .resumeButton:hover {
+    background-color: #A81621;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* line 189, ../sass/partials/_responsive.scss */
+  .resumeButton a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* line 198, ../sass/partials/_responsive.scss */
+  .trigger-top,
+  .trigger-middle,
+  .trigger-bottom {
+    position: absolute;
+    top: 34px;
+    left: 12px;
+    height: 4px;
+    width: 28px;
+    background: #bbb;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  /* line 214, ../sass/partials/_responsive.scss */
+  .trigger-top {
+    top: 26px;
+    content: "";
+  }
+
+  /* line 219, ../sass/partials/_responsive.scss */
+  .nav-trigger:hover .trigger-top {
+    top: 24px;
+  }
+
+  /* line 223, ../sass/partials/_responsive.scss */
+  .trigger-bottom {
+    top: 42px;
+    content: "";
+  }
+
+  /* line 228, ../sass/partials/_responsive.scss */
+  .nav-trigger:hover .trigger-bottom {
+    top: 44px;
+  }
+
+  /* line 232, ../sass/partials/_responsive.scss */
+  .trigger-middle.open {
+    background: transparent;
+  }
+
+  /* line 236, ../sass/partials/_responsive.scss */
+  .trigger-top.open {
+    top: 34px;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+  }
+
+  /* line 241, ../sass/partials/_responsive.scss */
+  .nav-trigger:hover .trigger-top.open {
+    top: 34px;
+  }
+
+  /* line 245, ../sass/partials/_responsive.scss */
+  .trigger-bottom.open {
+    top: 34px;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+  }
+
+  /* line 250, ../sass/partials/_responsive.scss */
+  .nav-trigger:hover .trigger-bottom.open {
+    top: 34px;
+  }
+}
+/* =================
+ * Extra small Devices, Phones
+ ===================*/
+/* =================
+ * Custom Extra small Devices, Phones
+ ===================*/

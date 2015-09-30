@@ -55,12 +55,12 @@ h2 {
 	color: $dark-blue-text;
 }
 
-.font-yellow {
-	color: $yellow;
+.font-orange {
+	color: $orange;
 }
 
-.blue-border {
-	border: 2px solid $light-blue;
+.font-grey {
+	color: $grey;
 }
 
 // =============================================================================
@@ -72,35 +72,73 @@ header {
 }
 
 
+// =============================================================================
+// Site container size Style
+// =============================================================================
+.content {
+	max-width: 1000px;
+}
+
 
 // =============================================================================
 // Navbar Styling
 // =============================================================================
-nav ul {
-	float: right;
 
-	li {
-		display: inline-block;
-		padding: $padding-small $padding-base 0 $padding-base;
-		font-size: $nav-font-size;
+nav {
+	position: fixed;
+	background-color: $site-bg;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 70px;
+	margin-top: 0;
+	margin-bottom: 0;
+	z-index: 999;
+	text-align: center;
+
+	a {
+		font-size: $icon-size;
+	}
+
+	i {
+		width: 100%;
+		padding: $padding-base;
+		color: $white;
+		border-bottom: 1px solid #454545;
+	}
+}
+
+// =============================================================================
+// Footer Styling
+// =============================================================================
+
+footer {
+	padding-top: $padding-small;
+	padding-bottom: $padding-small;
+
+	h2 {
 		text-transform: uppercase;
-		letter-spacing: 4px;
+		color: $white;
+	}
 
-		a {
-			@include transition (all 0.3s ease-in-out);
-			display: block;
-			color: $nav-link-color;
-			text-decoration: none;
+	.footerInfo {
+		padding-left: $padding-base;
+	}
 
-			&:link, &:visited, &:hover, &:active {
-				@include transition (all 0.3s ease-in-out);
-				text-decoration: none;
-			}
+	.socialMedia {
+		padding-right: $padding-base;
+		float: right;
+		text-align: right;
+
+		i{
+			padding-right: $padding-small;
+			color: $orange;
+			font-size: $social-icon-size;
 
 			&:hover {
-				color: $nav-link-hover;
+				@include transition (all 0.3s ease-in-out);
+				color: $white;
 			}
 		}
 	}
 }
-

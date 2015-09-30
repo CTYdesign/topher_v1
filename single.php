@@ -1,13 +1,25 @@
 
-<?php get_header(); the_post();?>
+<?php get_header( 'interior' ); the_post();?>
 
 <div class="portfolioItemContainer">
+
+	<nav>
+		<a href="<?php echo get_site_url(); ?>">
+			<i class="fa fa-times-circle"></i>
+		</a>
+
+		<div class="interior-logo">
+			<img src="<?php bloginfo('template_directory'); ?>/images/topher.png">
+		</div>
+	</nav>
+
+	<div class="portfolio-shift">
 
 	<div class="interiorHeaderContent">
 		<img src="<?php the_field('hero_image'); ?>" class="img-responsive">
 	</div>
 
-	<div class="container-fluid itemOverview">
+	<div class="container-fluid itemOverview padding-bottom-md">
 		<h1><?php echo get_the_title(); ?></h1>
 		<div class="colorBar"></div>
 
@@ -25,7 +37,8 @@
 				<div class="colorBar"></div>
 				<p><?php the_field('development_platforms'); ?></p>
 			</div>
-
+			
+			<?php if ( get_field('project_url') !=  "" ) { ?>
 			<div class="col-md-2 col-sm-12 col-xs-12 rollPlatform">
 				<div class="linkButton">
 					<a href="<?php the_field('project_url'); ?>" target="_blank">
@@ -33,26 +46,65 @@
 					</a>
 				</div>
 			</div>
+			<?php } ?>
 		</div>
 	</div>
 
-<div class="container-fluid itemContent">
+<div class="container-fluid itemContent" style="background-color: <?php the_field('background_color'); ?> ">
+	<div class="row">
+		<div class="col-sm-6 col-xs-12 no-padding">
+			<img src="<?php the_field('feature_image_one'); ?>" class="img-responsive" alt="<?php echo get_the_title(); ?>"/>
+		</div>
+		<div class="col-sm-6 col-xs-12 no-padding">
+			<img src="<?php the_field('feature_image_two'); ?>" class="img-responsive" alt="<?php echo get_the_title(); ?>"/>
+		</div>
+	</div>
 
-	<h1 style="text-align: center; font-size: 50px;">The Results</h1>
-	<div class="redBar" style="margin-bottom: 55px;"></div>
-	
-		<?php if ( have_rows('case_study_images') ):
+	<div class="row">
+		<div class="col-sm-6 col-xs-12 no-padding">
+			<img src="<?php the_field('feature_image_three'); ?>" class="img-responsive" alt="<?php echo get_the_title(); ?>"/>
+		</div>
+		<div class="col-sm-6 col-xs-12 no-padding">
+			<img src="<?php the_field('feature_image_four'); ?>" class="img-responsive" alt="<?php echo get_the_title(); ?>"/>
+		</div>
+	</div>
+
+<!-- 		<?php if ( have_rows('case_study_images') ):
 				while ( have_rows('case_study_images') ) : the_row(); ?>
 
 					<div class="col-sm-<?php the_sub_field('column_number'); ?> col-xs-12 caseImage">
 						<img src="<?php the_sub_field('individual_image'); ?>" class="img-responsive" alt="<?php echo get_the_title(); ?>"/>
 					</div>
 
-			<?php endwhile; endif; ?>
+			<?php endwhile; endif; ?> -->
 </div>
 
 
-<h1 class="viewMore">Check out my other work</h1>
+
+<div class="container-fluid text-center">
+	<div class="row">
+		<div class="clientNavContainer">
+			<!-- <div class="clientNav prevClient">
+				<?php echo previous_post_link(); ?>
+				<i class="fa fa-arrow-left"></i>
+				
+			</div> -->
+			<div class="clientNav clientList">
+				<a href="<?php echo get_site_url(); ?>">
+					<i class="fa fa-eye"></i>
+					<p>View All Projects</p>
+				</a>
+			</div>
+	<!-- 		<div class="clientNav nextClient">
+				<?php echo next_post_link(); ?>
+				<i class="fa fa-arrow-right"></i>
+			</div>		 -->		
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- <h1 class="viewMore">Check out my other work</h1>
 <div class="redBar"></div>
 
 <div class="container-fluid content">
@@ -89,7 +141,7 @@
 	?>
 	
 
-</div>
+</div> -->
 </div>
 
 <?php get_footer(); ?>

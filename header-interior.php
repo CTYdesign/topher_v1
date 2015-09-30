@@ -30,14 +30,6 @@
   <p class="browsehappy">Shame! Are you really using an <strong>outdated</strong> browser? Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<header>
-	<div class="container-fluid">
-		<div class="row text-center logo">
-
-			<img src="<?php bloginfo('template_directory'); ?>/images/topher.png" class="img-responsive">
-			<p class="font-grey">Design <span class="font-orange">&middot;</span> Development <span class="font-orange">&middot;</span> UI/UX</p>
-
-	</div>
-</header>
 
 <div id="main">
+

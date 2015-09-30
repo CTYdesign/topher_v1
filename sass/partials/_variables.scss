@@ -7,10 +7,12 @@
 $orange: rgba(247, 148, 30, 1);
 $white: #FFFFFF;
 $dark-grey: #222222;
+$grey: #727272;
+$mid-grey: #333333;
 
 
 
-$site-bg: $dark-grey;
+$site-bg: $mid-grey;
 $nav-link-color: $white;
 $nav-link-hover: $orange;
 $client-p-color: $white;
@@ -23,8 +25,10 @@ $item-p-color: $dark-grey;
 // Font Sizes
 // =============================================================================
 $nav-font-size: 14px;
+$subtitle-font-size: 16px;
 $client-p-size: 18px;
 $icon-size: 26px;
+$social-icon-size: 32px;
 
 
 // COLOR PALETTE 
@@ -38,7 +42,8 @@ $white: #FFFFFF;
 $dark-yellow: #E6B00B;
 $yellow: rgba(254, 192, 50, 1);
 $dark-grey: #212121;
-$grey: #727272;
+
+
 $light-grey: #cccccc;
 $divider-color: #B6B6B6;
 $aqua: rgba(31, 183, 140, 1);
@@ -61,6 +66,8 @@ $padding-large-horizontal:  $padding-large;
 $padding-xs: 				$padding-small - 5; // 5px
 $padding-xs-vertical:       $padding-xs;
 $padding-xs-horizontal:     $padding-xs;
+$padding-xl:				$padding-large + 10;// 40px
+$padding-xxl:				$padding-xl + 10; 	//50px
 
 
 //== Tables
