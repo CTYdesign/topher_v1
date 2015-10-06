@@ -4,21 +4,26 @@
 // =============================================================================
 // Color Palette
 // =============================================================================
-$orange: rgba(247, 148, 30, 1);
+$orange: rgba(242, 98, 41, 1);
 $white: #FFFFFF;
 $dark-grey: #222222;
 $grey: #727272;
 $mid-grey: #333333;
+$light-grey: #EFEFEF;
 
 
 
-$site-bg: $mid-grey;
+$site-bg: $white;
+$nav-bar-bg: $mid-grey;
 $nav-link-color: $white;
 $nav-link-hover: $orange;
 $client-p-color: $white;
 $button-color: $dark-grey;
+$item-content-color: $light-grey;
 
-$item-p-color: $dark-grey;
+$item-p-color: $grey;
+
+$divider: $orange;
 
 
 // =============================================================================

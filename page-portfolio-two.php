@@ -111,21 +111,20 @@
 
 <div class="container content">
 	<div class="about-me">
-		<img src="http://dummyimage.com/1000x300/aabbcc/fff" alt="Yo" class="img-responsive">
+		<img src="<?php the_field('bio_image'); ?>" alt="Yo!" class="img-responsive">
 
 		<div class="row">
 			
 
-		<div class="col-sm-4 text-center">
-			<a href="/">Resume</a>
-			<a href="/">Email</a>
+		<div class="col-sm-3 col-xs-12 text-center">
+			<a href="<?php the_field('resume'); ?>">Resume</a>
+			<a href="mailto:<?php the_field('email'); ?>">Email</a>
 		</div>
 
-		<div class="col-sm-8">
+		<div class="col-sm-9 col-xs-12">
 			<h2>About me</h2>
-			<div class="line-break"></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, aliquam maiores minus iusto cupiditate reprehenderit repellat, placeat voluptatibus sed recusandae nisi enim qui totam voluptatem excepturi animi et vel repellendus.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur maxime nemo quis necessitatibus et ab. Corporis fuga quas accusamus, expedita libero quidem nam. Sapiente atque, rem rerum quo pariatur dolorum.</p>
+			<div class="divider-bar margin-left-none"></div>
+			<p><?php the_field('bio'); ?></p>
 		</div>
 	</div>
 
@@ -136,7 +135,7 @@
 <div class="container content thanks text-center">
 	<div class="row">
 		<img src="<?php bloginfo('template_directory'); ?>/images/dino.png" alt="#Rexlife">
-		<p>Thank you for viewing - Cache Monet</p>
+		<p>Thank you for viewing</p>
 	</div>
 
 </div>

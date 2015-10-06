@@ -1,5 +1,11 @@
 console.log('Get Schwifty!');
 
+
+/* Resize content divs to viewport height */
+
+var clientHeight = $( window ).height();
+  $('#clientHero').css('height', 707);
+
 ;(function ($) {
     'use strict';
     var $body    = $('html, body'),
@@ -17,7 +23,6 @@ console.log('Get Schwifty!');
             }
         }).data('smoothState');
 })(jQuery);
-
 
 /* =================
  * Mobile Navigation
@@ -47,3 +52,4 @@ $('.nav-trigger').click(function(e) {
   $('.trigger-top, .trigger-middle, .trigger-bottom').toggleClass('open');
 });
 });
+

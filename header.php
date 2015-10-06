@@ -19,7 +19,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-<script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.smoothState.js"></script>
 
 <?php wp_head(); ?>
 </head>
@@ -34,10 +33,11 @@
 	<div class="container-fluid">
 		<div class="row text-center logo">
 
-			<img src="<?php bloginfo('template_directory'); ?>/images/topher.png" class="img-responsive">
+			<img src="<?php bloginfo('template_directory'); ?>/images/chris-topher-young.png" class="img-responsive">
 			<p class="font-grey">Design <span class="font-orange">&middot;</span> Development <span class="font-orange">&middot;</span> UI/UX</p>
 
 	</div>
+
 </header>
 
 <div id="main">

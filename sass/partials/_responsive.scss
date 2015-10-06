@@ -35,7 +35,7 @@ Version: 1.0
 /* =================
  * Small Devices, Tablets
  ===================*/
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 769px) {
 
 	header {
 		padding: 0;
@@ -75,181 +75,33 @@ Version: 1.0
 		}
 
 		img {
-			height: 35px;
 			width: auto;
 		}
 
-		.nav-trigger {
-			@include transition (all, 0.3s, linear);
-			position: absolute;
-			top: -10px;
-			right: 0;
-			width: 70px;
-			height: 70px;
-			text-align: center;
-			z-index: 99;
-		}
 	}
 
-	nav ul {
-		float: none;
-		position: absolute;
-		text-align: center;
-		background-color: $site-bg;
-		z-index: 1;
+	.portfolio-shift {
 		width: 100%;
 	}
 
-	.navigation {
-		z-index: 1;
-		padding: 0;
-		margin-top: -145px;
-		z-index: 98;
+	.clientHero {
+		.overlayContent {
+			margin-left: 0;
+		}
 	}
 
-	.navigation.show-nav {
-		-ms-transform: translateY(145px);
-	    -webkit-transform: translateY(145px);
-	    transform: translateY(145px);
-	    -webkit-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.430, 0.995);
-		-moz-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.430, 0.995);
-		-o-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.430, 0.995);
-		transition: all 0.8s cubic-bezier(0.735, 0.005, 0.430, 0.995);
+	.footerInfo, .socialMedia {
+		margin: 0 auto;
 	}
 
-	.navigation.hide-nav {
-		-ms-transform: translateY(0px);
-	    -webkit-transform: translateY(0px);
-	    transform: translateY(0px);
-	    -webkit-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.430, 0.995);
-		-moz-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.430, 0.995);
-		-o-transition: all 0.8s cubic-bezier(0.735, 0.005, 0.430, 0.995);
-		transition: all 0.8s cubic-bezier(0.735, 0.005, 0.430, 0.995);
+	.socialMedia {
+		i {
+			padding-left: $padding-small;
+			padding-right: $padding-small;
+		}
 	}
 
-	nav ul li {
-		display: block;
-		padding: 15px 0px 15px 0px;
-		font-size: $nav-font-size;
-		text-transform: uppercase;
-		letter-spacing: 4px;
-	}
-
-	nav ul li a {
-		display: block;
-		color: $white;
-		text-decoration: none;
-		webkit-transition: all 0.3s ease-in-out;
-		-moz-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-	}
-
-	nav ul li a:hover {
-		color: #ED1C24;
-		text-decoration: none;
-		webkit-transition: all 0.3s ease-in-out;
-		-moz-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-	}
-
-	.resumeButton {
-		height: 40px;
-		background-color: $orange;
-		border-radius: 0;
-		padding: 0;
-	    -webkit-transition: all 0.3s ease-in-out;
-		-moz-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-	}
-
-	.resumeButton a {
-		display: block;
-		padding-right: 25px;
-		padding-left: 25px;
-		padding-top: 9px;
-		color: #fff;
-		text-decoration: none;
-		webkit-transition: all 0.3s ease-in-out;
-		-moz-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-	}
-
-	.resumeButton:hover {
-		background-color: #A81621;
-	    -webkit-transition: all 0.3s ease-in-out;
-		-moz-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-	}
-
-	.resumeButton a:hover {
-		color: #fff;
-		text-decoration: none;
-	}
-
-
-	.nav-trigger:hover {
-	}
-
-	.trigger-top,
-	.trigger-middle,
-	.trigger-bottom {
-		position: absolute;
-		top: 34px;
-		left: 12px;
-		height: 4px;
-		width: 28px;
-		background: #bbb;
-
-	    -webkit-transition: all 0.3s ease;
-		-moz-transition: all 0.3s ease;
-		-o-transition: all 0.3s ease;
-		transition: all 0.3s ease;
-	}
-
-	.trigger-top {
-	  top: 26px;
-	  content: "";
-	}
-
-	.nav-trigger:hover .trigger-top {
-		top: 24px;
-	}
-
-	.trigger-bottom {
-	  top: 42px;
-	  content: "";
-	}
-
-	.nav-trigger:hover .trigger-bottom {
-		top: 44px;
-	}
-
-	.trigger-middle.open {
-	  background: transparent;
-	}
-
-	.trigger-top.open {
-	  top: 34px;
-	  -webkit-transform: rotate3d(0, 0, 1, -45deg);
-	}
-
-	.nav-trigger:hover .trigger-top.open {
-		top: 34px;
-	}
-
-	.trigger-bottom.open  {
-	  top: 34px;
-	  -webkit-transform: rotate3d(0, 0, 1, 45deg);
-	}
-
-	.nav-trigger:hover .trigger-bottom.open {
-		top: 34px;
-	}
+	
 
 }
 
@@ -259,6 +111,32 @@ Version: 1.0
  ===================*/
 @media only screen and (max-width : 480px) {
 
+	.logo {
+		img {
+			width: 90%;
+		}
+	}
+
+	nav {
+		display: none;
+	}
+
+	.portfolio-shift {
+		margin-left: 0;
+	}
+
+	.clientHero {
+		.overlayContent {
+			margin-left: 0;
+		}
+	}
+
+	.itemContent {
+		img {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 
 
 }
